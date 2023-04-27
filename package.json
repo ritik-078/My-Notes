@@ -1,6 +1,6 @@
 {
-  "homepage": "http://ridhamj.github.io/MyLilNotes",
-  "name": "my-lil-notes",
+  "homepage": "https://ritik-078.github.io/My-Notes/",
+  "name": "my-notes",
   "version": "1.0.0",
   "engines": {
     "node": "14.x"
@@ -17,12 +17,13 @@
     "typescript": "3.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
+    
   },
   "browserslist": [
     ">0.2%",
